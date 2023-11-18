@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fbf8ef"
+    android:padding="15dp">
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:layout_width="match_parent"
+       android:layout_height="100dp"
+       android:orientation="vertical"
+       >
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1">
+
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1.1">
+
+               <androidx.appcompat.widget.LinearLayoutCompat
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="2"
+                   android:background="#f39768"
+                   android:layout_margin="5dp"
+                   android:gravity="center">
+
+                   <androidx.appcompat.widget.AppCompatImageView
+                       android:layout_width="25dp"
+                       android:layout_height="25dp"
+                       android:src="@drawable/cubg"
+                       android:tint="@color/white"/>
+
+                   <Space
+                       android:layout_width="20dp"
+                       android:layout_height="0dp"/>
+
+                   <Chronometer
+                       android:id="@+id/winChro"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/white"
+                       android:textSize="15sp"/>
+
+               </androidx.appcompat.widget.LinearLayoutCompat>
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/btnPause"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:background="#787065"
+                   android:layout_margin="5dp"
+                   android:src="@drawable/baseline_pause_24"
+                   android:tint="@color/white"/>
+
+           </androidx.appcompat.widget.LinearLayoutCompat>
+
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="2"/>
+
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1.1">
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/btn_volume"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:background="#787065"
+                   android:layout_margin="5dp"
+                   android:src="@drawable/volume"
+                   android:tint="@color/white"
+                   android:padding="5dp"/>
+               <androidx.appcompat.widget.LinearLayoutCompat
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="2"
+                   android:background="#f39768"
+                   android:layout_margin="5dp"
+                   android:gravity="center">
+
+                   <androidx.appcompat.widget.AppCompatTextView
+                       android:id="@+id/winCount"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       tools:text="0"
+                       android:textColor="@color/white"
+                       android:textSize="18sp"/>
+
+                   <Space
+                       android:layout_width="20dp"
+                       android:layout_height="20dp"/>
+
+                   <androidx.appcompat.widget.AppCompatImageView
+                       android:layout_width="25dp"
+                       android:layout_height="25sp"
+                       android:src="@drawable/cubg"
+                       android:tint="@color/white"
+                       android:layout_marginLeft="35dp"/>
+
+               </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+           </androidx.appcompat.widget.LinearLayoutCompat>
+
+       </androidx.appcompat.widget.LinearLayoutCompat>
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1.5">
+
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1.1">
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/btn_exit"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:background="#bcaea1"
+                   android:layout_margin="5dp"
+                   android:src="@drawable/back"
+                   android:padding="9dp"
+                   android:tint="@color/white"/>
+
+               <Chronometer
+                   android:id="@+id/chronometer"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="2"
+                   android:background="#bcaea1"
+                   android:layout_margin="5dp"
+                   android:gravity="center"
+                   android:textColor="@color/white"
+                   android:textSize="23sp"/>
+
+
+           </androidx.appcompat.widget.LinearLayoutCompat>
+
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="2"/>
+
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1.1">
+
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:id="@+id/tv_count"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="2"
+                   android:background="#bcaea1"
+                   android:layout_margin="5dp"
+                   tools:text="0"
+                   android:gravity="center"
+                   android:textColor="@color/white"
+                   android:textSize="23sp"/>
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/restart"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:background="#bcaea1"
+                   android:layout_margin="5dp"
+                   android:src="@drawable/restart"
+                   android:padding="9dp"
+                   android:tint="@color/white"/>
+
+           </androidx.appcompat.widget.LinearLayoutCompat>
+
+       </androidx.appcompat.widget.LinearLayoutCompat>
+
+   </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <RelativeLayout
+        android:id="@+id/relativePlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#bcaea1">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn1"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            tools:text="1"
+            style="@style/style_start_btn_1"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn2"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            tools:text="2"
+            style="@style/style_start_btn_1"
+            android:layout_toEndOf="@+id/btn1"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn3"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            tools:text="3"
+            style="@style/style_start_btn_1"
+            android:layout_toEndOf="@+id/btn2"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn4"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            tools:text="4"
+            style="@style/style_start_btn_1"
+            android:layout_toEndOf="@+id/btn3"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn5"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            tools:text="5"
+            style="@style/style_start_btn_2"
+            android:layout_below="@+id/btn1"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn6"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            tools:text="6"
+            style="@style/style_start_btn_2"
+            android:layout_toEndOf="@+id/btn1"
+            android:layout_below="@+id/btn2"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn7"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            tools:text="7"
+            style="@style/style_start_btn_2"
+            android:layout_toEndOf="@+id/btn2"
+            android:layout_below="@id/btn3"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn8"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            tools:text="8"
+            style="@style/style_start_btn_2"
+            android:layout_below="@+id/btn4"
+            android:layout_toEndOf="@+id/btn7"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn9"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            tools:text="9"
+            style="@style/style_start_btn_3"
+            android:layout_below="@+id/btn5"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn10"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            tools:text="10"
+            style="@style/style_start_btn_3"
+            android:layout_toEndOf="@+id/btn1"
+            android:layout_below="@+id/btn6"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn11"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            tools:text="11"
+            style="@style/style_start_btn_3"
+            android:layout_toEndOf="@+id/btn2"
+            android:layout_below="@id/btn7"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn12"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            tools:text="12"
+            style="@style/style_start_btn_3"
+            android:layout_below="@+id/btn8"
+            android:layout_toEndOf="@+id/btn7"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn13"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            tools:text="13"
+            style="@style/style_start_btn_4"
+            android:layout_below="@+id/btn9"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn14"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            tools:text="14"
+            style="@style/style_start_btn_4"
+            android:layout_toEndOf="@+id/btn1"
+            android:layout_below="@+id/btn10"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn15"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            tools:text="15"
+            style="@style/style_start_btn_4"
+            android:layout_toEndOf="@+id/btn2"
+            android:layout_below="@id/btn11"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn16"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            tools:text="16"
+            style="@style/style_start_btn_4"
+            android:layout_below="@+id/btn12"
+            android:layout_toEndOf="@+id/btn7"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
